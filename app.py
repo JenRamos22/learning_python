@@ -1,23 +1,24 @@
 
-jenn_playlist = [4.5, 2.8, 3.2, 5.0, 1.5]
+luggage= [12, 25, 8, 23, 30, 15]
+
+def luggage_Weight(weigth_list):
+    heavy_suitcases = 0
+    standard_suitcases = 0
+
+    for weigth in weigth_list:
+        if weigth >= 23:
+            heavy_suitcases += 1
+
+        else: 
+            standard_suitcases += 1
+
+    print("heavy suitcases")
+    print(heavy_suitcases)
+    print("standard suitcases")
+    print(standard_suitcases)
+
+luggage_Weight(luggage)
 
 
-def calculate_song_duration(song):
-    total_songs = 0
-    for duration in song:
-        if duration >= 3.0:
-            total_songs += 1
-            
-            
 
 
-    print("The songs that last more than 3.0 minutes are:")
-    print(total_songs)
-
-
-calculate_song_duration(jenn_playlist)
-
-
-
-
-    
